@@ -1,0 +1,49 @@
+Criação do Banco de dados
+
+Criar Banco
+
+create database db_projeto;
+
+use db_projeto;
+
+Criar 2 tabelas com 5 campos
+
+1 - Cliente
+
+CREATE TABLE tb_clientes (
+    id_cliente int(4) AUTO_INCREMENT,
+    nome_cliente varchar(50) NOT NULL,
+    endereco_cliente varchar(50) NOT NULL,
+    cpf_cliente varchar(15) NOT NULL,
+    cidade_cliente varchar(50) NOT NULL,
+    PRIMARY KEY(id_cliente)
+);
+
+select * from tb_clientes;
+
+CREATE TABLE tb_produtos (
+    id_produto int(4) AUTO_INCREMENT,
+    tipo_produto varchar(50) NOT NULL,
+    nome_produto varchar(50) NOT NULL,
+    data_entrada varchar(10) NOT NULL,
+    data_saida varchar(10) NOT NULL,
+    valor_produto varchar(20) NOT NULL,
+    PRIMARY KEY(id_produto)
+);
+
+select * from tb_produtos;
+
+Inserir dados na tabelas
+
+tabela de clientes:
+
+INSERT INTO tb_clientes(nome_cliente, endereco_cliente, cpf_cliente, cidade_cliente) VALUES ('Adriano', 'Rua teste', '123123', 'Bauru');
+INSERT INTO tb_clientes(nome_cliente, endereco_cliente, cpf_cliente, cidade_cliente) VALUES ('Marco', 'Rua flor do amor', '123321', 'Jau');
+
+tabele de produtos:
+
+INSERT INTO tb_produtos(tipo_produto, nome_produto, data_entrada, data_saida, valor_produto) VALUES ('Roupa', 'Camisa polo', '2021-05-03', '2021-09-15', '25.50');
+INSERT INTO tb_produtos(tipo_produto, nome_produto, data_entrada, data_saida, valor_produto) VALUES ('Alimentos', 'Arroz pateco', '2021-04-09', '2021-08-25', '30.50');
+
+select * from tb_clientes;
+select * from tb_produtos;

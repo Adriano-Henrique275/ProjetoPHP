@@ -1,0 +1,14 @@
+#header {
+    background-color: rgb(70, 155, 70);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 07%;
+}
+
+ #index a {
+    display: grid  inline;
+
+}
