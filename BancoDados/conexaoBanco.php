@@ -1,8 +1,8 @@
 <?php
     $domain = "localhost";
-    $user = "dri";
-    $password = "B@sstr@ck3";
-    $database = "db_projeto";
+    $user = ""; //Adicione o ususario
+    $password = ""; //Adicione a senha do usuario do banco
+    $database = ""; //Adicione o banco
 
     $mysqli = new mysqli ($domain, $user, $password, $database);
 
